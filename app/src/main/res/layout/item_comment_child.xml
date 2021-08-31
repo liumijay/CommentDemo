@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="8dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginStart="42dp"
+        android:layout_marginEnd="12dp"
+        android:background="@drawable/bg_circle" />
+
+    <TextView
+        android:id="@+id/comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:text="title"
+        android:textColor="#111"
+        android:textSize="15sp" />
+
+    <TextView
+        android:id="@+id/comment_reply_suffix"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/comment_name"
+        android:layout_alignBottom="@id/comment_name"
+        android:gravity="center"
+        android:layout_alignTop="@id/comment_name"
+        android:layout_marginStart="8dp"
+        android:textColor="#333"
+        android:textSize="12sp" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_name"
+        android:layout_toEndOf="@id/avatar"
+        android:text="content"
+        android:textColor="#888"
+        android:layout_marginEnd="40dp"
+        android:textSize="12sp" />
+
+    <ImageView
+        android:id="@+id/comment_love"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="4dp"
+        android:scaleType="center" />
+</RelativeLayout>

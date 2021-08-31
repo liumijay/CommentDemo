@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Comment Demo</string>
+    <string name="reply_hint">回复@：%1$s</string>
+    <string name="reply_user_suffix">  ▶  %1$s</string>
+    <string name="notify_friend">&#160;@%1$s&#160;</string>
+    <string name="bottom_sheet_behavior" translatable="false">com.example.comment.FixCommentDialogBehavior</string>
+</resources>

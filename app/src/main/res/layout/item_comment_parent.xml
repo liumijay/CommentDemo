@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="12dp">
+
+    <ImageView
+        android:id="@+id/avatar"
+        android:layout_width="45dp"
+        android:layout_height="45dp"
+        android:layout_marginRight="12dp"
+        android:background="@drawable/bg_circle" />
+
+    <TextView
+        android:id="@+id/comment_name"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/avatar"
+        android:text="title"
+        android:textColor="#111"
+        android:textSize="17sp" />
+
+    <TextView
+        android:id="@+id/comment_content"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/comment_name"
+        android:layout_toEndOf="@id/avatar"
+        android:text="content"
+        android:layout_marginEnd="40dp"
+        android:textColor="#888"
+        android:textSize="15sp" />
+
+    <ImageView
+        android:id="@+id/comment_love"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:scaleType="center" />
+</RelativeLayout>
